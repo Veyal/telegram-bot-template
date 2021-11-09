@@ -1,7 +1,6 @@
 const meta = {
     "name": "whoami",
     "command": "/whoami",
-    "function":"whoami",
     "args": []
 }
 

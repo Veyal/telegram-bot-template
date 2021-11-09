@@ -10,8 +10,7 @@
 ```javascript
 const meta = {
         "name": "add",
-        "command": "/add",
-        "function":"add",
+        "command": "/add"
         "args": ["number","number"],
         "delimiter": " "
 }

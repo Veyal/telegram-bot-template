@@ -11,7 +11,7 @@ const functions = {}
 var normalizedPath = require("path").join(__dirname, "src/functions");
 require("fs").readdirSync(normalizedPath).forEach(function(file) {
     if (file.endsWith(".js")) {
-        commands.push(require("./src/functions/" + file).meta);
+        commands.push({...require("./src/functions/" + file).meta,"function":file.slice(0, -3)});
         functions[file.slice(0, -3)] = require("./src/functions/" + file).main;
     }
 });
